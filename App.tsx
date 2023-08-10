@@ -2,6 +2,7 @@ import { Platform, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Bottom from "./Components/bottomTab";
 import { StatusBar } from "expo-status-bar";
+import InputForm from "./Components/inputForm";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <View style={styles.listView}>
         <Text style={styles.listTitle}>완료된 일</Text>
       </View>
+      <InputForm />
     </SafeAreaView>
   );
 }
@@ -47,5 +49,13 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "rgba(0,0,0,0.2)",
     marginBottom: 10,
+  },
+  emptyListText: {
+    paddingTop: 10,
+    paddingBottom: 15,
+    paddingHorizontal: 15,
+    fontSize: 15,
+    lineHeight: 20,
+    color: "#737373",
   },
 });
