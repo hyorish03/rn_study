@@ -1,7 +1,7 @@
 import React from "react";
 
 function screenB() {
-  return <div></div>;
+  return <div>sdfsdf</div>;
 }
 
 export default screenB;
