@@ -7,6 +7,7 @@ import {
   Text,
   TextInput,
 } from "react-native";
+import MainScreen from "../Screens/MainScreen";
 
 function InputForm() {
   return (
@@ -21,6 +22,7 @@ function InputForm() {
       <Pressable style={styles.addButton}>
         <Text style={styles.addButtonText}>+</Text>
       </Pressable>
+      <MainScreen />
     </KeyboardAvoidingView>
   );
 }
